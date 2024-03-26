@@ -47,6 +47,9 @@ public class FilmController {
     public Films getFilmByName(@PathVariable("film_name") String film_name) {
         return filmService.getFilmByName(film_name);
     }
-
+    @GetMapping("/deploy")
+    public String deploy() {
+        return "Hello world";
+    }
 
 }
